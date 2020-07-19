@@ -1,0 +1,420 @@
+
+body,h1,h2,h3, ul,li,p{
+    margin: 0px;
+    margin: 0px;
+  
+   
+}
+body{
+    font-family: Georgia, serif;
+    color: #252525;
+    font-family: sans-serif;
+   
+}
+.menu{
+    background:#252525;
+    padding: 1px 0;
+    border-radius: 5px;
+}
+
+.menu-container
+{
+   max-width: 960px;
+   margin: 0 auto;
+  
+   
+}
+
+.frutos-trigo
+{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight:bold;
+    color: white;
+    float: left;
+    margin: 10px 2px;
+    
+}
+
+.menu-logo
+{
+    display: block;
+    float: left;
+    margin-left: 1px;
+}
+.menu-nav
+{
+    float:right;
+    margin-right:2px;
+}
+
+.menu-container::after, .menu-container::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.menu-nav li
+{
+    display: inline-block;
+}
+.menu-nav a
+{
+    display: block;
+    padding:14px 3px;
+    text-decoration: none;
+    font-size: 1.65em;
+    color:white;
+}
+
+.menu-nav a:hover
+{
+    background:#1E90FF;
+}
+
+.main-container
+{
+    max-width: 960px;
+    margin:auto;
+   
+}
+
+
+
+/*container-sobre nós*/
+
+.container-sobre-nos{
+    max-width: 960px;
+    margin:0 auto;
+    padding: 1px auto;
+}
+.container-sobre-nos > h2, .produtos >h2{
+    text-align: center;
+    background: #252525;
+    color: white;
+    margin: 3px auto ;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.0em;
+}
+.sobre-nos
+{
+  clear: both;  
+  float: right;
+  margin:0px auto;
+  max-width: 25%;
+
+}
+
+/*slide início*/
+
+
+.introducao img{
+    display: block;
+    margin:0 auto;
+    max-width: 95%;
+}
+
+
+.slide{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.slide > *{/*  *  <---seleciona todos dentro da div*/
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+
+}
+
+.slide > .active
+{
+    position: relative;
+    opacity: 1;
+} 
+
+
+
+
+
+.container-sobre-nos::after, .container-sobre-nos{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*produtos*/
+.produtos{
+    max-width: 960px;
+    margin:0 auto;
+    padding:0 auto;
+   
+}
+
+.itens-produtos td{
+    margin-left: 0px auto;
+    width: 400;
+    height: 284px;
+    border-radius: 10px;
+}
+
+.itens-produtos td img{
+    
+   border-radius:25px;
+ 
+}
+td > h3
+{
+ 
+  
+  font-size: 2.25em;
+  line-height:0.3em;/*quando não quero altura de linha*/
+  background: #252525;
+  width: 300px;
+  height: 20px;
+  text-align: center; 
+  color:#fff;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+  padding: 13px 0 10px 0;
+  top: -25px;
+ /* position: relative;*/
+  border-radius: 10px;
+  text-transform:capitalize;
+}
+/*locais*/
+
+
+.locais
+{
+    max-width: 960px;
+    margin:0 auto;
+    padding: 20px 0;
+}
+.locais > h2{
+    text-align: center;
+    background: #252525;
+    color: white;
+    margin: 3px auto ;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.0em;
+}
+.locais-item
+*/
+{
+    clear: both;
+    margin: 40px auto;/*pra ficar separado*/
+}
+
+.locais-item img
+{
+    width: 460px;
+    float: left;
+    display: block;/*tira os dois centimetros da imagem */
+    margin: 0 5px;
+
+}
+
+.locais-item::after, .locais-item::before
+{
+    display: table;
+    content:'';
+    clear: both;
+}
+
+
+.locais-item > div
+{
+    width: 460px;
+    float: left;
+   
+    margin: 0 10px;
+}
+
+.locais-item h2
+{
+    font-size: 2.25em;
+    margin:0px 30px 20px 50px;
+}
+
+.locais-item ul{
+    margin:20px 10px;
+}
+
+
+.locais-item ul li{
+   list-style: none;
+}
+
+
+
+
+.locais-item p{
+ font-size: 1.125em;
+ line-height: 1.4em;
+ max-width: 320px;
+ margin-bottom: 40px;
+ 
+}
+
+.locais-item a
+{
+    font-size: 1.125em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 3px solid;
+    color: #252525;
+    padding: 10px 20px;
+    margin:20px 50px;
+}
+
+
+
+/*contATO*/
+
+
+form{
+    margin: 10px 0;
+    
+}
+
+form  label, form legend{
+    display: block;/*cada campo ocupa uma linha*/
+    font-size: 18px;
+    margin: 0 0 5px;
+	
+
+}
+
+.input_padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 5px 25px 10px 25px;
+    width: 50%;  
+}
+/*radio box */
+
+.checkbox{
+    margin: 15px 0;
+}
+/*botão enviar*/
+.enviar {
+    width:40%;
+    padding:12px 0;/**espacamento inrterno*/
+    background:#8B7500;
+    color: white;
+    font-weight: bold;/*texto dfica em negrito*/
+    font-size: 18px;/*tamanho da fonte*/
+    border: none;/*aqui tiramos a borda padrão*/
+    border-radius: 10px;/*aqui deixamos a borda arredondada*/
+    transition: 1s background ;/*faz a transição de cor em 1 segundo muda de cor** "background" é o nome da configuracao/
+    /*transition: 1s all -->faz com que todos os elementos faça a transição em 1s;*/
+    cursor: pointer;/****deixa o cursor do mouse uma mão****/
+
+}
+
+.enviar:hover {
+    background: #ff1111;/*na transição fica nessa cor, ao passar o mouse em cima**/
+   /**
+    transform:scale(1.4);/*aumenta proporcionalmente o meu botão em 1.2 <--tamanho
+    transform:rotate(8deg);/*roda o meu intem em 8graus
+    */
+    transform:scale(1.2)rotate(2deg);/*aqui ele aumenta proporcionalmente e faz a rotação em 9deg*/
+   /*scale aumenta o tamanho, rotate aumenta a rotação ou girao elemento*/
+}
+
+
+
+
+/*endereço*/
+
+.nosso-contato
+{
+    margin: 10px auto;
+}
+
+.endereco{
+margin-left: 10px;
+}
+
+.endereco ul li{
+    text-decoration: none;
+}
+/*tabela*/
+
+.tabela-funcionamento{
+    margin: auto;
+   
+}
+table{
+    float: left;
+    margin: 8px 10px auto 10px;
+    
+}
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td{
+    border:1px  solid #000000;
+    padding: 8px 15px;
+
+}
+/*subir topo*/
+
+/*footer*/
+
+footer{
+    background: black;
+    color:white;
+    text-align: center;
+  
+  }
+  footer a{
+    
+    color: white;
+    text-decoration: none;
+    
+  }
+
+
+  .social-media ul li{
+      display: inline;
+  }
+.D_sousa:hover{
+    color: blue;
+  }
+.texto_rodape{
+    padding-top: 20px;
+    padding-bottom:40px;
+}
+
+/*botao subir topo*/
+
+
+a[href="#subir"]{
+    width: 55px;
+    height: 40px;
+    padding:10px;
+    position:fixed;
+    top: 90%;
+    right:30px;
+    display:none;
+    font-size: 30px;
+    background: #252525;
+    border-radius: 40px;
+    text-align: center;
+}
+
+a[href="#subir"]:hover{
+    text-decoration:none;
+}
